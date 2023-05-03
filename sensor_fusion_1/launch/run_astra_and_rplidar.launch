@@ -1,0 +1,16 @@
+<!-- Launch Astra and RPLidar A1 with Static TFs-->
+
+<launch>
+
+    <!-- Astra ROS Driver -->
+    <include file="$(find astra_launch)/launch/astra.launch">
+        <arg name="publish_tf" value="true" /> 
+    </include>
+    
+    <!-- RPLIDAR A1 Driver -->
+    <include file="$(find rplidar_ros)/launch/rplidar.launch"/>
+
+    <!-- Needed Static Transforms between the sensors -->
+    <include file="$(find sensor_fusion_1)/launch/static_tfs_astra_rplidar.launch"/>
+
+</launch>
