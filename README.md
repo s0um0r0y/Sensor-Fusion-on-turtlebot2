@@ -8,11 +8,12 @@ I am working in the G.D Naidu Robotics Lab in VIT Vellore on creating an autonom
 This project is done in Linux operationg system version `20.04 LTS` , and implemented on `Turtlebot2 robot`, ROS which is a middleware operating system in astra version.Our Turtlebot2, equipped with a `RP LIDAR A1M8` and an `Orbec astra camera` for depth sensing.
 
 ### Dependencies
--  Hector_SLAM
--  Gmapping
--  RTAB Mapping
--  PCL_conversion
--  Actionlib
+-  [hectorslam](https://github.com/tu-darmstadt-ros-pkg/hector_slam)
+-  [Gmapping](https://wiki.ros.org/slam_gmapping)
+-  [RTAB Mapping](http://wiki.ros.org/rtabmap_ros)
+-  [PCL_conversion](http://wiki.ros.org/pcl_conversions)
+-  [Actionlib](https://wiki.ros.org/actionlib)
+-  [turtlebot_viboot](https://github.com/roboticslab-fr/turtlebot_vibot)
 
 ### Hectorslam on RPlidar
 
