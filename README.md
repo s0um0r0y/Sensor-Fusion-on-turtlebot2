@@ -9,7 +9,7 @@ This project is done in Linux operationg system version `20.04 LTS` , and implem
 
 ### Hectorslam on RPlidar
 
-We implemented the hectorslam with gmaping to get a 2D map of the robotics lab in VIT. This map lacks depth information of the environment so we plan to use a depth camera(Orbec astra) to get the depth information of the environment.
+We implemented the [hectorslam](https://github.com/tu-darmstadt-ros-pkg/hector_slam) to get a 2D map of the robotics lab in VIT. This map lacks 3D depth information of the environment so we plan to use a depth camera(Orbec astra) to get the depth information of the environment.
 
 ### Point cloud data from Orbec Astra depth camera
 
