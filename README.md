@@ -19,4 +19,3 @@ Here we are able to visualise the point cloud data from the Orbec astra depth ca
 
 We made a dataset using RTAB Mapping with the features of the environment
 
-We are still trying to fuse the data of the LIDAR and the depth camera and this is the progress as of now
