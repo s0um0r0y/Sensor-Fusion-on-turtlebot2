@@ -5,7 +5,7 @@ I am working in the G.D Naidu Robotics Lab in VIT Vellore on creating an autonom
 
 ### Turtlebot 2
 
-This project is done in Linux operationg system version `20.04 LTS` , and implemented on `Turtlebot2 robot`, ROS which is a middleware operating system in astra version.Our Turtlebot2, equipped with a `2D RP LIDAR A1M8` and an `Orbec astra camera` for depth sensing.
+This project is done in Linux operationg system version `20.04 LTS` , and implemented on `Turtlebot2 robot`, ROS which is a middleware operating system in astra version.Our Turtlebot2, equipped with a `RP LIDAR A1M8` and an `Orbec astra camera` for depth sensing.
 
 ### Hectorslam on RPlidar
 
