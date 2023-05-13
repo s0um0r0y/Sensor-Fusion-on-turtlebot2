@@ -15,6 +15,10 @@ This project is done in Linux operationg system version `20.04 LTS` , and implem
 -  [Actionlib](https://wiki.ros.org/actionlib)
 -  [turtlebot_viboot](https://github.com/roboticslab-fr/turtlebot_vibot)
 
+## Packages
+
+There are 3 packages here
+
 ### Hectorslam on RPlidar
 
 We implemented the [hectorslam](https://github.com/tu-darmstadt-ros-pkg/hector_slam) to get a 2D map of the robotics lab in VIT. This map lacks 3D depth information of the environment so we plan to use a depth camera(Orbec astra) to get the depth information of the environment.
