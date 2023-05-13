@@ -1,0 +1,12 @@
+<!--Used for visualizing the 3d-map data and reconstruction point cloud data during 2D navigation-->
+<launch>
+
+	<node name="rviz" pkg="rviz" type="rviz" args="-d $(find my_package)/rviz/config-rtabmap-navigation.rviz"/>
+
+	<!--To start the keyboard on workstation(if connected to turtlebot)/-->
+	<include file = "$(find turtlebot_teleop)/launch/keyboard_teleop.launch" /> 
+
+	<node pkg="my_package" name="pathplanning" type="robotics_lab_map_nav2.py"/>
+	<!-- This line gives a predefined path to the robot/-->
+
+</launch>

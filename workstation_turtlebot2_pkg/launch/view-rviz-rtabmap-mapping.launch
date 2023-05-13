@@ -1,0 +1,9 @@
+<!--Used for visualising the turtlebot while building a map using depth sensors and RP Lidar with PCD information-->
+<launch>
+
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find my_package)/rviz/config-rtabmap-mapping.rviz"/>
+
+  <!--To start the keyboard on workstation(if connected to turtlebot)/-->
+  <include file = "$(find turtlebot_teleop)/launch/keyboard_teleop.launch" /> 
+
+</launch>
