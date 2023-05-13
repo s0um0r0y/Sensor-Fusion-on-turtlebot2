@@ -17,17 +17,39 @@ This project is done in Linux operationg system version `20.04 LTS` , and implem
 
 ## Packages
 
-There are 3 packages here
+There are 3 packages here `onboard_turtlebot2_pkg` which has to be run on turtlebot's netbook , `sensor_fusion_1` which contains the static transforms and `workstation_turtlebot2_pkg` which the user has to run on the pc. 
 
-### Hectorslam on RPlidar
+### Installation and run
 
-We implemented the [hectorslam](https://github.com/tu-darmstadt-ros-pkg/hector_slam) to get a 2D map of the robotics lab in VIT. This map lacks 3D depth information of the environment so we plan to use a depth camera(Orbec astra) to get the depth information of the environment.
+```bash
+#packages installation
+$ cd ~/Downloads
+$ git clone https://github.com/s0um0r0y/Sensor-Fusion-on-turtlebot2.git
+$ cd Sensor-Fusion-on-turtlebot2/
 
-### Point cloud data from Orbec Astra depth camera
+#on turtlebot netbook (each launch has to be on a seperate terminal)
 
-Here we are able to visualise the point cloud data from the Orbec astra depth camera. We plan to combine this information with the data coming from the RPlidar .
+#for mapping
+$ cd Sensor-Fusion-on-turtlebot2/
+$ roslaunch onboard_turtlebot2_pkg 3d-mapping-rtabmap.launch
 
-### RTAB Mapping
+#for navigation
+$ cd Sensor-Fusion-on-turtlebot2/
+$ roslaunch onboard_turtlebot2_pkg 3d-navigation-rtabmap.launch
 
-We made a dataset using RTAB Mapping with the features of the environment
+#on system/pc (each launch has to be on a seperate terminal)
+
+#for mapping
+$ cd Sensor-Fusion-on-turtlebot2/
+$ roslaunch rplidar_ros rplidar.launch
+$ roslaunch astra_camera astra.launch
+$ roslaunch sensor_fusion_1 static_tfs_astra_rplidar.launch
+$ roslaunch sensor_fusion_1 run_astra_and_rplidar.launch
+$ roslaunch workstation_turtlebot2_pkg view-rviz-rtabmap-mapping.launch
+
+#for navigation
+$ cd Sensor-Fusion-on-turtlebot2/
+$ roslaunch workstation_turtlebot2_pkg view-rviz-rtabmap-navigation.launch
+
+```
 
