@@ -52,4 +52,11 @@ $ cd Sensor-Fusion-on-turtlebot2/
 $ roslaunch workstation_turtlebot2_pkg view-rviz-rtabmap-navigation.launch
 
 ```
+if you want to save the obtained PointCloud information into a pcd file 
+```bash
+$ rosrun pcl_ros pointcloud_to_pcd input:=/rtabmap/cloud_map
 
+#for using a pcd file to display the 3d map in rviz
+
+$ rosrun pcl_ros pcd_to_pointcloud point_cloud_file.pcd
+```
